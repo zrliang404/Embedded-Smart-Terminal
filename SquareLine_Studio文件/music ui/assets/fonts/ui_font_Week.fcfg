@@ -1,0 +1,16 @@
+{
+  "codename": "Week",
+  "ttf_path": "/assets/fonts/AlimamaShuHeiTi-Bold.ttf",
+  "bin_path": "/assets/fonts\\ui_font_Week.bin",
+  "c_path": "/assets/fonts\\ui_font_Week.c",
+  "cfg_path": "/assets/fonts\\ui_font_Week.fcfg",
+  "size": 16,
+  "bpp": 4,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": ":星期一二三四五六日/占用率温度亮设置亮度确定未连接扫描中找到已失败选网络",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

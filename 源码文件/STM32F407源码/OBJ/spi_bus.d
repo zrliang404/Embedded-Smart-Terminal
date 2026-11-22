@@ -1,0 +1,15 @@
+..\obj\spi_bus.o: ..\APP\spi_bus.c
+..\obj\spi_bus.o: ..\APP\spi_bus.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\FreeRTOS.h
+..\obj\spi_bus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\spi_bus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\FreeRTOSConfig.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\projdefs.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\portable.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\deprecated_definitions.h
+..\obj\spi_bus.o: ..\FREEPTOS\portable\RVDS\ARM_CM4F\portmacro.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\mpu_wrappers.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\semphr.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\queue.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\task.h
+..\obj\spi_bus.o: ..\FREEPTOS\include\list.h

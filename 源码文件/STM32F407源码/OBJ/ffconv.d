@@ -1,0 +1,15 @@
+..\obj\ffconv.o: ..\APP\ffconv.c
+..\obj\ffconv.o: ..\FATFS\src\ff.h
+..\obj\ffconv.o: ..\FATFS\src\integer.h
+..\obj\ffconv.o: ..\FATFS\src\ffconf.h
+..\obj\ffconv.o: ..\FREEPTOS\include\FreeRTOS.h
+..\obj\ffconv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\ffconv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ffconv.o: ..\FREEPTOS\include\FreeRTOSConfig.h
+..\obj\ffconv.o: ..\FREEPTOS\include\projdefs.h
+..\obj\ffconv.o: ..\FREEPTOS\include\portable.h
+..\obj\ffconv.o: ..\FREEPTOS\include\deprecated_definitions.h
+..\obj\ffconv.o: ..\FREEPTOS\portable\RVDS\ARM_CM4F\portmacro.h
+..\obj\ffconv.o: ..\FREEPTOS\include\mpu_wrappers.h
+..\obj\ffconv.o: ..\FREEPTOS\include\task.h
+..\obj\ffconv.o: ..\FREEPTOS\include\list.h

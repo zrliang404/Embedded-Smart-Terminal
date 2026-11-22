@@ -1,0 +1,16 @@
+..\obj\uart_task.o: ..\APP\uart_task.c
+..\obj\uart_task.o: ..\APP\uart_task.h
+..\obj\uart_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\uart_task.o: ..\APP\soft_uart.h
+..\obj\uart_task.o: ..\FREEPTOS\include\FreeRTOS.h
+..\obj\uart_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\uart_task.o: ..\FREEPTOS\include\FreeRTOSConfig.h
+..\obj\uart_task.o: ..\FREEPTOS\include\projdefs.h
+..\obj\uart_task.o: ..\FREEPTOS\include\portable.h
+..\obj\uart_task.o: ..\FREEPTOS\include\deprecated_definitions.h
+..\obj\uart_task.o: ..\FREEPTOS\portable\RVDS\ARM_CM4F\portmacro.h
+..\obj\uart_task.o: ..\FREEPTOS\include\mpu_wrappers.h
+..\obj\uart_task.o: ..\FREEPTOS\include\task.h
+..\obj\uart_task.o: ..\FREEPTOS\include\list.h
+..\obj\uart_task.o: ..\FREEPTOS\include\queue.h
+..\obj\uart_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

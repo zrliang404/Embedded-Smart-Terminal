@@ -1,0 +1,15 @@
+..\obj\fs_lock.o: ..\APP\fs_lock.c
+..\obj\fs_lock.o: ..\APP\fs_lock.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\FreeRTOS.h
+..\obj\fs_lock.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\fs_lock.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\FreeRTOSConfig.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\projdefs.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\portable.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\deprecated_definitions.h
+..\obj\fs_lock.o: ..\FREEPTOS\portable\RVDS\ARM_CM4F\portmacro.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\mpu_wrappers.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\semphr.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\queue.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\task.h
+..\obj\fs_lock.o: ..\FREEPTOS\include\list.h

@@ -1,0 +1,15 @@
+..\obj\lv_hal_tick.o: ..\LVGL\lvgl\src\hal\lv_hal_tick.c
+..\obj\lv_hal_tick.o: ..\LVGL\lvgl\src\hal\lv_hal_tick.h
+..\obj\lv_hal_tick.o: ..\LVGL\lvgl\src\hal\../lv_conf_internal.h
+..\obj\lv_hal_tick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\lv_hal_tick.o: ..\LVGL\lvgl\src\hal\../lv_conf_kconfig.h
+..\obj\lv_hal_tick.o: ..\LVGL\lvgl\src\hal\../../../lv_conf.h
+..\obj\lv_hal_tick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+..\obj\lv_hal_tick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\include\FreeRTOS.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\include\FreeRTOSConfig.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\include\projdefs.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\include\portable.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\include\deprecated_definitions.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\portable\RVDS\ARM_CM4F\portmacro.h
+..\obj\lv_hal_tick.o: ..\FREEPTOS\include\mpu_wrappers.h

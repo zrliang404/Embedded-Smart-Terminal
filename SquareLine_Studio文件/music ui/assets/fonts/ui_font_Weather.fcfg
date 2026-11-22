@@ -1,0 +1,16 @@
+{
+  "codename": "Weather",
+  "ttf_path": "/assets/fonts/AlimamaShuHeiTi-Bold.ttf",
+  "bin_path": "/assets/fonts\\ui_font_Weather.bin",
+  "c_path": "/assets/fonts\\ui_font_Weather.c",
+  "cfg_path": "/assets/fonts\\ui_font_Weather.fcfg",
+  "size": 20,
+  "bpp": 4,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "晴多云间大部阴阵雨雷伴有冰雹小天气中大暴雨特冻夹雪阵小雪暴浮扬沙强雾霾风飓热带龙卷冷热温度：",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

@@ -1,0 +1,10 @@
+..\obj\def.o: ..\LWIP\src\core\def.c
+..\obj\def.o: ..\LWIP\src\include\lwip/opt.h
+..\obj\def.o: ..\LWIP\app\lwipopts.h
+..\obj\def.o: ..\LWIP\src\include\lwip/debug.h
+..\obj\def.o: ..\LWIP\src\include\lwip/arch.h
+..\obj\def.o: ..\LWIP\port\arch/cc.h
+..\obj\def.o: ..\LWIP\port\arch/cpu.h
+..\obj\def.o: ..\LWIP\src\include\lwip/opt.h
+..\obj\def.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\def.o: ..\LWIP\src\include\lwip/def.h

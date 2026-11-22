@@ -1,0 +1,65 @@
+#include "FreeRTOS.h"
+#include "task.h"
+#include "lvgl.h"
+#include "ui.h"
+#include "delay.h"
+#include "stdio.h"
+
+#define LVGL_TASK_STACK   768        /* 3KB，lv_timer_handler 里要做渲染 */
+
+static TaskHandle_t xLvglTaskHandle    = NULL;
+static TaskHandle_t xMonitorTaskHandle = NULL;
+
+/* ---------------- LVGL 任务：唯一允许碰 LVGL 的任务 ---------------- */
+static void vLvglTask(void *pvParameters)
+{
+    (void)pvParameters;
+
+    ui_init();                       /* 建 3 个屏幕（此时 LVGL 已 lv_init 过） */
+
+    for (;;)
+    {
+        lv_timer_handler();          /* LVGL 主循环：动画、刷新、读触摸 */
+        delay_ms(10);                /* 让出 CPU，别霸占 */
+    }
+}
+
+/* ---------------- 监控任务：打印栈水位 ---------------- */
+static void vMonitorTask(void *pvParameters)
+{
+    (void)pvParameters;
+    for (;;)
+    {
+        delay_ms(3000);
+        printf("\r\n[stack] LVGL free = %u words\r\n",
+               uxTaskGetStackHighWaterMark(xLvglTaskHandle));
+    }
+}
+
+void RTOS_AppStart(void)
+{
+    xTaskCreate(vLvglTask,    "LVGL", LVGL_TASK_STACK, NULL, 2, &xLvglTaskHandle);
+    xTaskCreate(vMonitorTask, "MON",  256,              NULL, 1, &xMonitorTaskHandle);
+
+    configASSERT(xLvglTaskHandle    != NULL);
+    configASSERT(xMonitorTaskHandle != NULL);
+}
+
+/* ---------------- 内核钩子（保持不动） ---------------- */
+volatile char    *g_pcOverflowTask = NULL;
+volatile uint32_t g_ulOverflowCnt  = 0;
+
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+{
+    (void)xTask;
+    g_pcOverflowTask = pcTaskName;
+    g_ulOverflowCnt++;
+    taskDISABLE_INTERRUPTS();
+    for (;;) { }
+}
+
+void vApplicationMallocFailedHook(void)
+{
+    taskDISABLE_INTERRUPTS();
+    for (;;) { }
+}

@@ -1,0 +1,16 @@
+{
+  "codename": "monitorPage",
+  "ttf_path": "/assets/fonts/SarasaUiSC-Regular.ttf",
+  "bin_path": "/assets/fonts\\ui_font_monitorPage.bin",
+  "c_path": "/assets/fonts\\ui_font_monitorPage.c",
+  "cfg_path": "/assets/fonts\\ui_font_monitorPage.fcfg",
+  "size": 20,
+  "bpp": 4,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "°C监控页面助手设置确定",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}
